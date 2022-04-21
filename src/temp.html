@@ -4,19 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title><%= htmlWebpackPlugin.options.title %></title>
+
+    <script src="https://kit.fontawesome.com/fd5f3863d9.js" crossorigin="anonymous"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
-    <header>
-        <h1 id = "change"><%= htmlWebpackPlugin.options.title %></h1>
-    </header>
+    <section class ="showcase">
 
-    <form id= "forms">
-        <label for="fname">location:</label><br>
-        <input type="text" id="fname" name="fname" ><br>
-        
-        <input id ="submit" type="submit" value="Submit">
-      </form> 
+        <header>
+            <h1 id = "change"><%= htmlWebpackPlugin.options.title %>  <ion-icon name="sunny-outline"></ion-icon></h1>
+            <div class = "input"> 
     
+                <form id= "forms">
+                  <h2>DISCOVER WEATHER ANYWHERE LIVE.</h2>
+                  <div class = "h4con"><h4> Enter a city below to find the local weather in that area.</h4></div>
+                  
+                    
+                  <div class ="submitcontainer"><input type="text" id="fname" name="fname" ><input id ="submit" type="submit" value="Submit" > </div>
+                  
+                    
+                    
+                  </form> 
+                
+            
+            </div>
+         
+        </header>
+
+        <div id = "weathercontainer" class = "weathercontainer"> 
+
+            
+        </div>
+        
+    
+
+      
+    
+        
+    <video class ="vid" src="../assets/Pexels Videos 1409899.mp4" muted loop autoplay></video>
+    <div class ="overlay"></div>
+    </section>
+
+
 </body>
 </html>
