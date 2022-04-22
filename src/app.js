@@ -19,7 +19,7 @@ submit.addEventListener('submit', (e) =>{
     const sky = document.getElementById('clouds')
     const humidity = document.getElementById('humidity')
     const location = document.getElementById('fname').value
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${location}&APPID=498def7de750295b71a8faec7d3bcdd3&units=imperial`, {mode: 'cors'})
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&APPID=498def7de750295b71a8faec7d3bcdd3&units=imperial`, {mode: 'cors'})
     .then(function(response) {
       return response.json();
     })
