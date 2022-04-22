@@ -57,6 +57,7 @@ outline: none;
 border: 3px solid white;
 color: white;
 font-weight: 600;
+border-radius: 25px;
 }
 @keyframes fadeIn{
 from{
@@ -72,10 +73,12 @@ to{
 }
 
 .submitcontainer{
-    padding-top: 35px;
+    padding-top: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 15px;
+    
 }
 .h4con{
     display: flex;
@@ -88,6 +91,7 @@ outline: none;
 border: 3px solid white;
 color: white;
 font-weight: 600;
+border-radius: 25px;
 
 
 }
@@ -109,36 +113,47 @@ background-color: turquoise;
 }
 
 .weatherbox{
-   
+    animation: fadeIn 10s;
+   color: white;
     background: #00000059;
-    border: 3px solid white;
-    height: 30vh;
-    width:30vw;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  
+    border: 6px solid white;
+
+  z-index: 1001;
+  border-radius: 25px;
 
 }
 
 .weathercontainer{
-    margin-left: 30vw;
-    margin-top: 25vh;
-    position: absolute;
-    z-index:900;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-top: 60vh;
+   
+    z-index: index 2;
+    
     
 }
 .h1temp h1{
 
-    font-size: 70px;
+    font-size: 50px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .h1temp h5{
     padding: .5rem;
+}
+.h1temp h6{
+    display: flex;
+    justify-content: center;
+}
+
+.cityName{
+    display: flex;
+    justify-content: center;
+
+}
+.img{ padding: 0;
+    height: 70px;
+    width: 70px;
 }
